@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory android:title="@string/title">
+    <CheckBoxPreference
+      android:key="checkbox_key"
+      android:title="@string/checkbox_title"
+      android:summary="@string/checkbox_summary" />
+    <EditTextPreference
+      android:key="edittext_key"
+      android:title="@string/edittext_title"
+      android:summary="@string/edittext_summary"
+      android:dialogTitle="@string/edittext_dialogtitle" />
+    <ListPreference
+      android:key="list_key"
+      android:title="@string/list_title"
+      android:summary="@string/list_summary"
+      android:dialogTitle="@string/list_dialogtitle"
+      android:entries="@array/list_entries"
+      android:entryValues="@array/list_entryvalues" />
+    <RingtonePreference
+      android:key="ringtone_key"
+      android:title="@string/ringtone_title"
+      android:showDefault="true"
+      android:summary="@string/ringtone_summary" />
+  </PreferenceCategory>
+  <PreferenceCategory android:title="@string/title2">
+	<net.margaritov.preference.colorpicker.ColorPickerPreference
+      android:key="color1"
+      android:title="@string/color1_title"
+      android:summary="@string/color1_summary"
+      android:defaultValue="@color/pumpkin_orange"
+      alphaSlider="true"
+	/>
+	<Preference android:key="test_key" android:title="hogehoge"></Preference>
+	<Preference android:key="test_key" android:title="hogehoge"></Preference>
+	<Preference android:key="test_key" android:title="hogehoge"></Preference>
+	<Preference android:key="test_key" android:title="hogehoge"></Preference>
+	<Preference android:key="test_key" android:title="hogehoge"></Preference>
+	<Preference android:key="test_key" android:title="hogehoge"></Preference>
+  </PreferenceCategory>
+</PreferenceScreen>

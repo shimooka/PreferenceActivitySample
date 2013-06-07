@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PreferenceActivitySample</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="title">タイトル</string>
+    <string name="checkbox_title">チェックボックスタイトル</string>
+    <string name="checkbox_summary">チェックボックスサマリー</string>
+    <string name="edittext_title">テキストタイトル</string>
+    <string name="edittext_summary">テキストサマリー</string>
+    <string name="edittext_dialogtitle">テキストダイアログタイトル</string>
+    <string name="list_title">リストタイトル</string>
+    <string name="list_summary">リストサマリー</string>
+    <string name="list_dialogtitle">リストダイアログタイトル</string>
+    <string name="ringtone_title">リングトーンタイトル</string>
+    <string name="ringtone_summary">リングトーンサマリー</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on Color to apply</string>
+    <string name="color1_title">表示色</string>
+    <string name="color1_summary">表示色サマリー</string>
+    <string name="button_text">ボタン</string>
+    <string name="title2">タイトル2</string>
+
+</resources>

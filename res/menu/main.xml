@@ -5,5 +5,9 @@
         android:orderInCategory="100"
         android:showAsAction="never"
         android:title="@string/action_settings"/>
+    <item android:id="@+id/dummy1" android:title="@string/action_dummy1" android:orderInCategory="110"></item>
+    <item android:id="@+id/dummy2" android:title="@string/action_dummy2" android:orderInCategory="200"></item>
+    <item android:id="@+id/dummy3" android:title="@string/action_dummy3" android:orderInCategory="130"></item>
+    <item android:id="@+id/about" android:title="@string/action_about" android:orderInCategory="105"></item>
 
 </menu>

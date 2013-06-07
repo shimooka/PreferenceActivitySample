@@ -1,31 +1,38 @@
 package com.example.preferenceactivitysample;
 
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.Preference.OnPreferenceClickListener;
-import android.preference.PreferenceActivity;
-import android.util.Log;
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends PreferenceActivity {
-    @SuppressWarnings("deprecation")
+public class MainActivity extends Activity {
+
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.pref);
-        Preference prefHogeHoge = findPreference("test_key");
-        prefHogeHoge.setOnPreferenceClickListener(new PrefClickListener());
-    }
-    private class PrefClickListener implements OnPreferenceClickListener {
-        public boolean onPreferenceClick(Preference preference) {
-            // クリックされたときの処理
-            Log.i("pref", "clicked");
-            return true;
-        }
+        setContentView(R.layout.activity_main);
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @SuppressLint("NewApi")
     public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+        case R.id.action_settings:
+            Intent intent = new Intent();
+            intent.setClassName(
+                this.getPackageName(),
+                SettingActivity.class.getName());
+            startActivity(intent);
+            return true;
+        }
         return false;
     }
 }

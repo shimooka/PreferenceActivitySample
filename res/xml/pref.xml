@@ -25,18 +25,18 @@
       android:summary="@string/ringtone_summary" />
   </PreferenceCategory>
   <PreferenceCategory android:title="@string/title2">
-	<net.margaritov.preference.colorpicker.ColorPickerPreference
-      android:key="color1"
-      android:title="@string/color1_title"
-      android:summary="@string/color1_summary"
-      android:defaultValue="@color/pumpkin_orange"
+  <net.margaritov.preference.colorpicker.ColorPickerPreference
+      android:key="color_key"
+      android:title="@string/color_title"
+      android:summary="@string/color_summary"
+      android:defaultValue="@color/default_color"
       alphaSlider="true"
-	/>
-	<Preference android:key="test_key" android:title="hogehoge"></Preference>
-	<Preference android:key="test_key" android:title="hogehoge"></Preference>
-	<Preference android:key="test_key" android:title="hogehoge"></Preference>
-	<Preference android:key="test_key" android:title="hogehoge"></Preference>
-	<Preference android:key="test_key" android:title="hogehoge"></Preference>
-	<Preference android:key="test_key" android:title="hogehoge"></Preference>
+  />
+  <Preference android:key="test_key" android:title="hogehoge"></Preference>
+  <Preference android:key="test_key" android:title="hogehoge"></Preference>
+  <Preference android:key="test_key" android:title="hogehoge"></Preference>
+  <Preference android:key="test_key" android:title="hogehoge"></Preference>
+  <Preference android:key="test_key" android:title="hogehoge"></Preference>
+  <Preference android:key="test_key" android:title="hogehoge"></Preference>
   </PreferenceCategory>
 </PreferenceScreen>
